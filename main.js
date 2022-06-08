@@ -25,4 +25,7 @@ ScrollReveal({
   #services,
   #services header,
   #services .card
+  #about,
+  #about header,
+  #about content
  `)
