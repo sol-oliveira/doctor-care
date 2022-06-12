@@ -1,10 +1,27 @@
+window.addEventListener('scroll', onScroll)
+
+onScroll()
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    document.querySelector("#navigation").classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    document.querySelector("#navigation").classList.remove('scroll')
   }
 }
+
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 550) {
+    document.querySelector("#backToTopButton").classList.add('show')
+  } else {
+    document.querySelector("#backToTopButton").classList.remove('show')
+  }
+}
+
 
 function openMenu() {
   document.body.classList.add('menu-expanded')
