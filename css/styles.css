@@ -511,6 +511,14 @@ footer .social-links {
       line-height: 5.2rem;
     }
 
+    .col-a {
+      grid-area: A;
+    }
+  
+    .col-b {
+      grid-area: B;
+    }
+
     /*=== NAVIGATION =================================*/
 
     nav#navigation .wrapper * {
@@ -651,15 +659,10 @@ footer .social-links {
         'C C';
     }
 
-    #home .col-a {
-      grid-area: A;
+    #home .col-a {   
       text-align: left;
       align-self: center;
-    }
-  
-    #home .col-b {
-      grid-area: B;
-    }
+    }  
 
     #home .content p {
       font-size: 1.8rem;
@@ -708,6 +711,22 @@ footer .social-links {
       width: 30%;
       flex-grow: 1;
     }
+
+    /*=== ABOUT =================================*/
+    #about .wrapper {
+      grid-template-columns: 48rem 1fr;
+      grid-template-areas: 'B A';
+      gap: 6.7rem;
+    }
+
+    #about .col-a {
+      align-self: center;
+    }
+
+    #about .content p {
+      margin-bottom: 0;
+    }
+
     
   
 
